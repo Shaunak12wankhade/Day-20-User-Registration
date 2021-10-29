@@ -65,7 +65,7 @@ namespace Day19UserRegistration
         {
             if (Regex.IsMatch(number, Regex_Number) == false)
             {
-                Console.WriteLine("Enter valid number!");
+                Console.WriteLine("Enter valid Mobile number !");
             }
         }
 
