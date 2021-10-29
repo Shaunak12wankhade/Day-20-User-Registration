@@ -10,6 +10,7 @@ namespace Day19UserRegistration
         public static string Regex_FirstName = "^[A-Z][a-z]{2,}$";
         public static string Regex_LastName = "^[A-Z][a-z]{2,}$";
         public static string Regex_Email = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+        public static string Regex_Number = "^[0-9]{2}[ ][6-9][0-9]{9}$";
 
         public static bool ValidateFirstName(string FirstName)
         {
@@ -51,6 +52,20 @@ namespace Day19UserRegistration
                 Console.WriteLine("Enter valid email address!");
             }
         }
+
+        public static bool validatenumber(string number)
+        {
+            return Regex.IsMatch(number, Regex_Number);
+        }
+
+        public static void checknumber(string number)
+        {
+            if (Regex.IsMatch(number, Regex_Number) == false)
+            {
+                Console.WriteLine("Enter valid mobile number!");
+            }
+        }
+
 
 
     }
