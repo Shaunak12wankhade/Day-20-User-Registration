@@ -9,7 +9,7 @@ namespace Day19UserRegistration
             // Console.WriteLine("Welcome to REGEX problems");
 
 
-            string FirstName, LastName;
+            string FirstName, LastName, email;
             Console.Write("Enter First Name: ");
             FirstName = Console.ReadLine();
             UserRegistration.checkFirstName(FirstName);
@@ -17,6 +17,10 @@ namespace Day19UserRegistration
             Console.Write("Enter Last Name: ");
             LastName = Console.ReadLine();
             UserRegistration.checkLastName(LastName);
+
+            Console.Write("Enter your email addresss: ");
+            email = Console.ReadLine();
+            UserRegistration.checkemail(email);
 
         }
 
