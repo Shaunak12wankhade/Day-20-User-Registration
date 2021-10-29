@@ -6,7 +6,17 @@ namespace Day19UserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to REGEX problems");
+            // Console.WriteLine("Welcome to REGEX problems");
+
+
+            string FirstName;
+            Console.Write("Enter First Name: ");
+            FirstName = Console.ReadLine();
+
+            UserRegistration.checkFirstName(FirstName);
+
+
         }
+
     }
 }
